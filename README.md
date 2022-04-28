@@ -1,70 +1,33 @@
-# parsewxml README
+[TOC]
 
-This is the README for your extension "parsewxml". After writing up a brief description, we recommend including the following sections.
+# MINISO 格式化wxml的vscode插件
 
-## Features
+## 如何使用
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### 1. 通过快捷键
 
-For example if there is an image subfolder under your extension project workspace:
+ctrl + shift + p , 在弹出的输入框输入 **miniso** , 可以看到 **Miniso parse wxml** 的提示，鼠标左键单击或者选中该选项敲回车即可
 
-\!\[feature X\]\(images/feature-x.png\)
+### 2. 鼠标右键
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+单击鼠标右键，可以看到 **Miniso parse wxml** 的提示，按下去就可以了
 
-## Requirements
+## 安装
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+因为没有搞 [Azure DevOps](https://docs.microsoft.com/zh-cn/azure/devops/organizations/accounts/create-organization?view=azure-devops) ，所以通过 .vsix **手动安装** , 如下图：
 
-## Extension Settings
+![安装向导](https://scrm-community.oss-cn-shenzhen.aliyuncs.com/miniso/vscode-plugins/install-plugin.png)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## 其他
 
-For example:
+(个人建议)
+建议使用2空格缩进
+不建议保存自动格式化
 
-This extension contributes the following settings:
+### 有问题请找**顶哥[陈安顶(于晏)]**
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
 
-## Known Issues
+### 版本日志
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+1. 1.0.2: 添加icon
+2. 1.0.3: 修复 wx:for-item, wx:for-index 加了{{}} 的问题

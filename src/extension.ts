@@ -1,25 +1,24 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-import * as vscode from "vscode"
-import {init} from "./parseTool"
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
+import * as vscode from "vscode";
+import {init} from "./parseTool";
 export function activate(context: vscode.ExtensionContext) {
-  console.log("格式化wxml插件")
+  console.log("Miniso 格式化 wxml vscode 插件");
 
   let disposable = vscode.commands.registerCommand(
-    "parsewxml.openDialog",
+    "parsewxml.minisoParsewxml",
     () => {
-      let acEditor = vscode.window.activeTextEditor
-
-      if (acEditor && acEditor.document.languageId === "vue") {
-        init()
+      let acEditor = vscode.window.activeTextEditor;
+	  if (!acEditor) {
+        vscode.window.showInformationMessage("没有文件在编辑，小心顶哥头给你打爆！");
+		return;
+	  }
+      if (acEditor && acEditor.document.languageId === "wxml") {
+        init();
       } else {
-        vscode.window.showInformationMessage("It‘s not a .vue file")
+        vscode.window.showInformationMessage("不是.wxml文件，别瞎搞");
       }
     }
-  )
-  context.subscriptions.push(disposable)
+  );
+  context.subscriptions.push(disposable);
 }
 
 // this method is called when your extension is deactivated
