@@ -12,11 +12,6 @@ ctrl + shift + p , 在弹出的输入框输入 **miniso** , 可以看到 **Minis
 
 单击鼠标右键，可以看到 **Miniso parse wxml** 的提示，按下去就可以了
 
-## 安装
-
-因为没有搞 [Azure DevOps](https://docs.microsoft.com/zh-cn/azure/devops/organizations/accounts/create-organization?view=azure-devops) ，所以通过 .vsix **手动安装** , 如下图：
-
-![安装向导](https://scrm-community.oss-cn-shenzhen.aliyuncs.com/miniso/vscode-plugins/install-plugin.png)
 
 ## 其他
 
@@ -31,3 +26,4 @@ ctrl + shift + p , 在弹出的输入框输入 **miniso** , 可以看到 **Minis
 
 1. 1.0.2: 添加icon
 2. 1.0.3: 修复 wx:for-item, wx:for-index 加了{{}} 的问题
+3. 1.0.4: 修改README.md
